@@ -3,7 +3,7 @@ from app.schemas import ChatRequests, ChatResponse
 
 class LLMProvider(ABC):
     @abstractmethod
-    async def complete(slef, request: ChatRequests) -> ChatResponse:
+    async def complete(self, request: ChatRequests) -> ChatResponse:
         pass
 
     @abstractmethod
